@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soluss Expertos Financieros - Apple Style Demo</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS Animate On Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    .parallax { background-attachment: fixed; background-size: cover; background-position: center; }
+  </style>
+</head>
+<body class="antialiased text-gray-900">
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-white bg-opacity-90 backdrop-blur-md z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+      <div class="text-2xl font-semibold">Soluss</div>
+      <ul class="hidden md:flex space-x-8">
+        <li><a href="#hero" class="hover:text-blue-600">Inicio</a></li>
+        <li><a href="#features" class="hover:text-blue-600">Características</a></li>
+        <li><a href="#services" class="hover:text-blue-600">Servicios</a></li>
+        <li><a href="#testimonials" class="hover:text-blue-600">Testimonios</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contacto</a></li>
+      </ul>
+      <button id="menu-btn" class="md:hidden">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Parallax -->
+  <section id="hero" class="h-screen parallax" style="background-image:url('https://source.unsplash.com/1600x900/?finance,blue');">
+    <div class="h-full flex items-center justify-center bg-black bg-opacity-40">
+      <div class="text-center text-white px-4" data-aos="zoom-in">
+        <h1 class="text-5xl md:text-6xl font-bold mb-4">Redefine tu futuro financiero</h1>
+        <p class="text-lg mb-6">Soluciones inteligentes, diseño impecable.</p>
+        <a href="#services" class="px-8 py-3 bg-blue-600 rounded-full text-white hover:bg-blue-700 transition">Descubre más</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto text-center mb-12" data-aos="fade-up">
+      <h2 class="text-4xl font-semibold">Características Destacadas</h2>
+      <p class="text-gray-600 mt-2">Innovación y simplicidad al alcance de tu mano.</p>
+    </div>
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 px-4">
+      <div class="space-y-4" data-aos="fade-right">
+        <img src="https://source.unsplash.com/400x300/?dashboard" alt="Panel Intuitivo" class="rounded-lg shadow-lg">
+        <h3 class="text-xl font-medium">Panel Intuitivo</h3>
+        <p class="text-gray-600">Visualiza tus finanzas en un solo vistazo con gráficos claros.</p>
+      </div>
+      <div class="space-y-4" data-aos="fade-up">
+        <img src="https://source.unsplash.com/400x300/?mobile,app" alt="App Móvil" class="rounded-lg shadow-lg">
+        <h3 class="text-xl font-medium">App Móvil</h3>
+        <p class="text-gray-600">Accede a tus inversiones y consejos desde tu smartphone.</p>
+      </div>
+      <div class="space-y-4" data-aos="fade-left">
+        <img src="https://source.unsplash.com/400x300/?security" alt="Máxima Seguridad" class="rounded-lg shadow-lg">
+        <h3 class="text-xl font-medium">Seguridad de Nivel Bancario</h3>
+        <p class="text-gray-600">Protección avanzada para tus datos y transacciones.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services with Buttons -->
+  <section id="services" class="py-24 bg-gray-50">
+    <div class="max-w-6xl mx-auto text-center mb-12" data-aos="fade-up">
+      <h2 class="text-4xl font-semibold">Nuestros Servicios</h2>
+      <p class="text-gray-600 mt-2">Soluciones a tu medida, diseñadas para ti.</p>
+    </div>
+    <div class="max-w-6xl mx-auto space-y-8 px-4">
+      <div class="grid md:grid-cols-2 gap-8" data-aos="fade-right">
+        <div>
+          <h3 class="text-2xl font-semibold mb-2">Asesoría Personalizada</h3>
+          <p class="text-gray-600 mb-4">Sesiones uno a uno para diseñar tu plan financiero ideal.</p>
+          <button class="px-6 py-2 border border-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition">Más info</button>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-2">Gestión de Inversiones</h3>
+          <p class="text-gray-600 mb-4">Estrategias diversificadas para maximizar tu rentabilidad.</p>
+          <button class="px-6 py-2 border border-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition">Más info</button>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8" data-aos="fade-left">
+        <div>
+          <h3 class="text-2xl font-semibold mb-2">Planes de Ahorro</h3>
+          <p class="text-gray-600 mb-4">Opciones flexibles para todos los plazos y objetivos.</p>
+          <button class="px-6 py-2 border border-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition">Más info</button>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-2">Consultoría Corporativa</h3>
+          <p class="text-gray-600 mb-4">Soluciones financieras para tu empresa y equipo.</p>
+          <button class="px-6 py-2 border border-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition">Más info</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parallax Image Section -->
+  <section class="h-96 parallax" style="background-image:url('https://source.unsplash.com/1600x900/?team,meeting');" data-aos="fade-up"></section>
+
+  <!-- Testimonials Extensive -->
+  <section id="testimonials" class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto text-center mb-12" data-aos="fade-up">
+      <h2 class="text-4xl font-semibold">Testimonios de Clientes</h2>
+      <p class="text-gray-600 mt-2">Ellos ya transformaron su futuro financiero.</p>
+    </div>
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+      <!-- Generamos 10 testimonios -->
+      <template id="testimonial-template">
+        <blockquote class="p-6 bg-gray-50 rounded-xl shadow" data-aos="zoom-in">
+          <p class="text-gray-800 mb-4">"Placeholder testimonial text describing a great experience with Soluss."</p>
+          <footer class="font-semibold">– Nombre Cliente</footer>
+        </blockquote>
+      </template>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const container = document.querySelector('#testimonials .grid');
+          const tmpl = document.getElementById('testimonial-template');
+          const names = ['Ana R.','Carlos M.','Lucía P.','Jorge V.','María S.','Diego L.','Sofía G.','Pedro H.','Valeria T.','Ricardo F.'];
+          names.forEach((name, i) => {
+            const clone = tmpl.content.cloneNode(true);
+            clone.querySelector('p').textContent = `"¡Gracias a Soluss, mis inversiones crecieron un ${10+i}% en un año!"`;
+            clone.querySelector('footer').textContent = `– ${name}`;
+            container.appendChild(clone);
+          });
+        });
+      </script>
+    </div>
+  </section>
+
+  <!-- Contact & Footer -->
+  <section id="contact" class="py-24 bg-gray-50" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto text-center mb-8">
+      <h2 class="text-3xl font-semibold">¿Listo para empezar?</h2>
+      <p class="text-gray-600 mt-2">Contáctanos y recibe tu asesoria inicial gratis.</p>
+    </div>
+    <div class="max-w-2xl mx-auto">
+      <form class="space-y-4">
+        <input type="text" placeholder="Nombre" class="w-full p-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+        <input type="email" placeholder="Correo Electrónico" class="w-full p-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+        <textarea rows="4" placeholder="Mensaje" class="w-full p-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" required></textarea>
+        <button type="submit" class="w-full py-4 bg-blue-600 text-white text-lg rounded-full hover:bg-blue-700 transition">Enviar Mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-white py-6 text-center text-sm text-gray-600">
+    © 2025 Soluss Expertos Financieros. Todos los derechos reservados.
+  </footer>
+
+  <!-- ManyChat Widget Script -->
+  <script src="https://widget.manychat.com/XXXXXXXXXXXXXXXXXXXX.js" async></script>
+  <!-- Creado por Emanuel Villa -->
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+    const btn = document.getElementById('menu-btn');
+    const nav = document.querySelector('nav ul');
+    btn.addEventListener('click', () => nav.classList.toggle('hidden'));
+  </script>
+</body>
+</html>
